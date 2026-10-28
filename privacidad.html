@@ -1,0 +1,110 @@
+<title>Canal Origen Privacy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+
+<style>
+/* Layout: one readable column, brand-yellow masthead band, EN then ES sections */
+:root {
+  --bg: #fffdf6; --fg: #1b1a17; --muted: #5f5a4d; --line: #e7e0c9;
+  --brand: #ffd23f; --brand-ink: #000000; --link: #6b4f00;
+  --display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15140f; --fg: #f1ede2; --muted: #b3ac98; --line: #35322a; --link: #ffd23f; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #15140f; --fg: #f1ede2; --muted: #b3ac98; --line: #35322a; --link: #ffd23f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); }
+.band { background: var(--brand); color: var(--brand-ink); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-block: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.band .wrap { display: flex; gap: 16px; align-items: center; padding-block: 28px; }
+.band img { width: 64px; height: 64px; border-radius: 12px; flex: none; }
+.band h1 { font: 800 clamp(1.6rem, 5vw, 2.3rem)/1.1 var(--display); margin: 0; text-wrap: balance; }
+.band p { margin: 4px 0 0; font-weight: 600; }
+nav.lang { display: flex; gap: 12px; flex-wrap: wrap; padding-block: 18px; border-bottom: 1px solid var(--line);
+  font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+section { padding-block: 24px 40px; }
+section + section { border-top: 1px solid var(--line); }
+h2 { font: 800 1.5rem/1.2 var(--display); margin: 8px 0 4px; }
+h3 { font: 700 1.1rem/1.3 var(--display); margin: 28px 0 6px; }
+.meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 8px; }
+p, li { max-width: 65ch; }
+ul { padding-left: 1.2em; display: grid; gap: 4px; }
+.mail { font-weight: 700; user-select: all; word-break: break-all; }
+footer { color: var(--muted); font-size: 0.9rem; padding-block: 24px 48px; border-top: 1px solid var(--line); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+
+<header class="band"><div class="wrap">
+  <img src="data:image/png;base64,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" alt="Canal Origen logo">
+  <div><h1>Privacy Policy</h1><p>Canal Origen · Origin Channel · Canal Origem</p></div>
+</div></header>
+<main class="wrap">
+  <nav class="lang" aria-label="Language"><a href="#english">English</a><a href="#espanol">Español</a></nav>
+  <section id="english" lang="en"><h2>Privacy Policy</h2><p class="meta">Last updated: October 28, 2026</p>
+<h3>Who is responsible</h3>
+<p>Canal Origen is responsible for the data handled by “Canal Origen Uploader”. Contact: <span class="mail">canalorigenyt@gmail.com</span>.</p>
+<h3>What data the tool uses</h3>
+<ul>
+  <li>The access tokens that TikTok, Instagram (Meta) and YouTube (Google) give when Canal Origen's account owner
+  authorizes the tool.</li>
+  <li>Basic information about Canal Origen's own accounts returned by those platforms, such as the account ID,
+  username, display name and the upload status of each video.</li>
+  <li>The videos, titles, descriptions and hashtags that Canal Origen creates and uploads.</li>
+</ul>
+<p>The tool does not collect any data about viewers, followers, commenters or any other users. This page does not use
+cookies or analytics.</p>
+<h3>How the data is used</h3>
+<p>Only to upload, schedule or publish Canal Origen's own videos to Canal Origen's own accounts, and to check that each
+upload worked. The data is not used for advertising or profiling.</p>
+<h3>Where it is kept and who receives it</h3>
+<p>Tokens and account information are stored only on Canal Origen's own computer, not on any external server. They are
+sent only to the official APIs of TikTok, Meta and Google, over encrypted connections (HTTPS). The data is never sold or
+shared with anyone else. Each platform handles the uploaded videos under its own privacy policy.</p>
+<h3>How long it is kept</h3>
+<p>Tokens are kept while access is authorized and are deleted when access is revoked or the tool stops being used.</p>
+<h3>Your rights and how to revoke access</h3>
+<p>Access can be revoked at any time: in TikTok, from Settings and privacy → Security and permissions → Apps;
+in Instagram, from Settings → Apps and websites; in Google, from your Google Account → Security → Third-party access.
+Under the GDPR you can ask to access, correct or delete your data by writing to <span class="mail">canalorigenyt@gmail.com</span>,
+and you may complain to the Spanish Data Protection Agency (aepd.es).</p>
+<h3>Children</h3>
+<p>The tool is not meant for children and does not knowingly process children's data.</p>
+<h3>Changes</h3>
+<p>This policy may be updated; the date at the top shows the latest version.</p>
+</section>
+  <section id="espanol" lang="es"><h2>Política de privacidad</h2><p class="meta">Última actualización: 28 de octubre de 2026</p>
+<h3>Responsable</h3>
+<p>Canal Origen es el responsable de los datos que trata «Canal Origen Uploader». Contacto: <span class="mail">canalorigenyt@gmail.com</span>.</p>
+<h3>Qué datos usa la herramienta</h3>
+<ul>
+  <li>Los tokens de acceso que dan TikTok, Instagram (Meta) y YouTube (Google) cuando el titular de las cuentas de
+  Canal Origen autoriza la herramienta.</li>
+  <li>Datos básicos de las cuentas propias de Canal Origen que devuelven esas plataformas, como el identificador,
+  el nombre de usuario, el nombre visible y el estado de subida de cada vídeo.</li>
+  <li>Los vídeos, títulos, descripciones y hashtags que crea y sube Canal Origen.</li>
+</ul>
+<p>La herramienta no recoge datos de espectadores, seguidores, personas que comentan ni ningún otro usuario. Esta página
+no usa cookies ni analítica.</p>
+<h3>Para qué se usan</h3>
+<p>Solo para subir, programar o publicar los vídeos de Canal Origen en sus propias cuentas y comprobar que cada subida
+ha funcionado. No se usan para publicidad ni para elaborar perfiles.</p>
+<h3>Dónde se guardan y quién los recibe</h3>
+<p>Los tokens y los datos de las cuentas se guardan solo en el ordenador de Canal Origen, no en servidores externos.
+Solo se envían a las API oficiales de TikTok, Meta y Google mediante conexiones cifradas (HTTPS). Nunca se venden ni se
+ceden a nadie más. Cada plataforma trata los vídeos subidos según su propia política de privacidad.</p>
+<h3>Cuánto tiempo se guardan</h3>
+<p>Los tokens se guardan mientras el acceso esté autorizado y se borran al revocarlo o al dejar de usar la herramienta.</p>
+<h3>Tus derechos y cómo revocar el acceso</h3>
+<p>Puedes revocar el acceso en cualquier momento: en TikTok, desde Ajustes y privacidad → Seguridad y permisos → Apps;
+en Instagram, desde Configuración → Apps y sitios web; en Google, desde tu Cuenta de Google → Seguridad → Acceso de
+terceros. Según el RGPD puedes pedir acceder, rectificar o suprimir tus datos escribiendo a
+<span class="mail">canalorigenyt@gmail.com</span>, y reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+<h3>Menores</h3>
+<p>La herramienta no está dirigida a menores y no trata a sabiendas datos de menores.</p>
+<h3>Cambios</h3>
+<p>Esta política puede actualizarse; la fecha de arriba indica la última versión.</p>
+</section>
+</main>
+<footer><div class="wrap">Canal Origen · Contact / Contacto: <span class="mail">canalorigenyt@gmail.com</span></div></footer>
